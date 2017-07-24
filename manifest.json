@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "element-isolate",
+  "description": "View an element in a new tab",
+  "version": "1.0",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "icons": {
+    "16": "icon/isolate-16.png",
+    "48": "icon/isolate-48.png",
+    "128": "icon/isolate-128.png"
+  },
+  "content_scripts": [ {
+    "all_frames": false,
+    "js": [ "page/page-content.js" ],
+    "matches": [ "http://*/*", "https://*/*" ],
+    "run_at": "document_end"
+  } ],
+  "options_ui": {
+    "page": "options.html"
+  },
+  "browser_action": {
+    "default_icon": "icon/isolate-16.png"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}

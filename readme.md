@@ -7,11 +7,17 @@ Many sites display their text content in narrow paragraphs, large font or awful 
 This extension allows you to extract an element to view in a new page, stripping the CSS 
 and other elements away to view the content in the browser standard.
 
+Use
+---
+1. Click the extension button
+2. Click the element you want isolated
+3. Element opens in a new tab
+
 Todo
 ----
- * Add `<meta charset="utf-8">` to the new page
- * Add `style=width: 80em; margin: auto` to extracted element
- * Options to set styles on each new page
- * Activate via 
-    * chrome menu -> Select element (with highlight) -> view in new tab
-    * Right click -> View in new tab
+* Options to set styles on each new page
+* Options to style particular elements (may override above)
+* Options to auto-remove particular elements (e.g images)
+* Activate via Right click -> View in new tab
+* Wipe styles from elements after transfer(Font size is inconsistent?)
+* Handle isolated page refresh somehow
