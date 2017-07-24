@@ -6,7 +6,7 @@ Accepts a ready message (once) with innerHTML content to display
 var onMessage = function(msg, sender, sendResponse) {
     if(msg.type === 'ready') {
         // Set the page content
-        document.getElementById('content').innerHTML = msg.content;
+        document.getElementById('content').innerHTML = '<h4>' + msg.title +'</h4>' + msg.content;
         document.title = msg.title;
         // Apply modifications
         removeImages(document.getElementById('content'));
